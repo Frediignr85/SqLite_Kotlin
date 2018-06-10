@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyectoprogramacion4.parcial1progra.Estadisticas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textEstadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:text="Estadisticas:"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textMayoresAccidentes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_horizontal"
+                android:text="Calles con mas Acccidentes:"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/listChoques"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginTop="5dp">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textMayoresCarros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_horizontal"
+                android:text="Calles con mas motos:"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/listCarros"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/textMayoresMotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_horizontal"
+                android:text="Calles con mas carros:"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/listMotos"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/textMayoresPeatones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_horizontal"
+                android:text="Calles con mas peatones:"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/listMayoresPeatones"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
